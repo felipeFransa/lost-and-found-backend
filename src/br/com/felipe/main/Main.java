@@ -1,11 +1,16 @@
 package br.com.felipe.main;
 
+import br.com.felipe.model.NewPost;
 import br.com.felipe.model.User;
 
 public class Main {
     public static void main(String[] args) {
 
         User newUser = new User();
+        NewPost post = new NewPost();
+
+        post.setAnimalsName("Gato");
+        post.setAnimalsType("Felinos");
 
         newUser.setFirstName("Felipe");
         newUser.setAge(17);
