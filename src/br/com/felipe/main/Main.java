@@ -8,17 +8,8 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        Scanner reading = new Scanner(System.in);
         User newUser = new User();
-        NewPost post = new NewPost();
-
-        System.out.println("Digite seu animal:");
-        String animal = reading.nextLine();
-
-        post.setAnimalsName(animal);
-        post.setAnimalsType("Felinos");
-
-        newUser.setFirstName("Felipe");
+        newUser.setFirstName("Felipe Francie");
         newUser.setAge(18);
         newUser.setPassword(1997);
 
@@ -26,10 +17,10 @@ public class Main {
         var name = newUser.getFirstName();
 
         if (age >= 18){
-            System.out.println("Olá " +name + " Acesso permitido.");
-            System.out.println(post.getAnimalsName());
+            System.out.println("Hi " +name + "access allowed.");
+
         }else {
-            System.out.println("Acesso negado.");
+            System.out.println("Access denied.");
         }
     }
 }
