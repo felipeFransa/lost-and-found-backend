@@ -8,16 +8,22 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
+        Scanner reading = new Scanner(System.in);
+        System.out.println("Enter your user name:");
+        String userName = reading.nextLine();
+        System.out.println("Enter your age:");
+        int userAge = reading.nextInt();
+
         User newUser = new User();
-        newUser.setFirstName("Felipe Francie");
-        newUser.setAge(18);
+        newUser.setFirstName(userName);
+        newUser.setAge(userAge);
         newUser.setPassword(1997);
 
         var age = newUser.getAge();
         var name = newUser.getFirstName();
 
         if (age >= 18){
-            System.out.println("Hi " +name + "access allowed.");
+            System.out.println("Hi " +name + " access allowed.");
 
         }else {
             System.out.println("Access denied.");
