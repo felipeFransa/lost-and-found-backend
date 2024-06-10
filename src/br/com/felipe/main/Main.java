@@ -1,6 +1,5 @@
 package br.com.felipe.main;
 
-import br.com.felipe.model.NewPost;
 import br.com.felipe.model.User;
 
 import java.util.Scanner;

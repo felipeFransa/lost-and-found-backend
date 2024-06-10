@@ -2,7 +2,7 @@ package br.com.felipe.model;
 
 import java.util.ArrayList;
 
-public class UserManager {
+public class UserManager extends User {
 
     private ArrayList<String> clients;
     private String region;

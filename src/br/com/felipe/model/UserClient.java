@@ -1,9 +1,9 @@
 package br.com.felipe.model;
 
-public class UserClient {
+public class UserClient extends User {
 
     private String cityName;
-    private double phoneNumber;
+    private int phoneNumber;
 
     public String getCityName() {
         return cityName;
@@ -13,11 +13,11 @@ public class UserClient {
         this.cityName = cityName;
     }
 
-    public double getPhoneNumber() {
+    public int getPhoneNumber() {
         return phoneNumber;
     }
 
-    public void setPhoneNumber(double phoneNumber) {
+    public void setPhoneNumber(int phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
 }
