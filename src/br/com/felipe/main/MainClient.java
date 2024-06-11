@@ -2,14 +2,27 @@ package br.com.felipe.main;
 
 import br.com.felipe.model.UserClient;
 
+import java.util.Scanner;
+
 public class MainClient {
     public static void main(String[] args) {
 
+        Scanner reading = new Scanner(System.in);
+
+        System.out.println("Enter your name:");
+        String clientName = reading.nextLine();
+
+        System.out.println("Enter your city:");
+        String clientCity = reading.nextLine();
+
+        System.out.println("Enter your password:");
+        Integer clientPassword = reading.nextInt();
+
         UserClient client = new UserClient();
 
-        client.setCityName("Belo Horinzote");
-        client.setPassword(1997);
-        client.setFirstName("Fransa");
+        client.setCityName(clientCity);
+        client.setPassword(clientPassword);
+        client.setFirstName(clientName);
         client.setPhoneNumber(31971);
 
         System.out.println(client.getCityName());
