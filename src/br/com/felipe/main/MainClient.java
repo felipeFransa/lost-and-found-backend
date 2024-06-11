@@ -15,6 +15,9 @@ public class MainClient {
         System.out.println("Enter your city:");
         String clientCity = reading.nextLine();
 
+        System.out.println("Enter your PhoneNumber");
+        String clientPhoneNumber = reading.nextLine();
+
         System.out.println("Enter your password:");
         Integer clientPassword = reading.nextInt();
 
@@ -23,7 +26,7 @@ public class MainClient {
         client.setCityName(clientCity);
         client.setPassword(clientPassword);
         client.setFirstName(clientName);
-        client.setPhoneNumber(31971);
+        client.setPhoneNumber(clientPhoneNumber);
 
         System.out.println(client.getCityName());
         System.out.println(client.getFirstName());

@@ -11,11 +11,17 @@ public class MainPost {
         NewPost post = new NewPost();
         System.out.println("enter your animal:");
         String animal = reading.nextLine();
+        System.out.println("Enter your species:");
+        String species = reading.nextLine();
+        System.out.println("Enter your region");
+        String region = reading.nextLine();
 
         post.setAnimalsName(animal);
-        post.setAnimalsType("Feline");
+        post.setAnimalsType(species);
+        post.setRegion(region);
 
         System.out.println(post.getAnimalsName());
         System.out.println(post.getAnimalsType());
+        System.out.println(post.getRegion());
     }
 }
