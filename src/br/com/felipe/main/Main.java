@@ -8,7 +8,6 @@ public class Main {
         System.out.println("Enter 0 of Client or 1 Manager");
         Integer opcion = reading.nextInt();
 
-
         if (opcion > 0){
             System.out.println("Welcome Client");
         }else {
