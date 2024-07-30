@@ -6,9 +6,9 @@ public class Main {
     public static void main(String[] args) {
         Scanner reading = new Scanner(System.in);
         System.out.println("Enter 0 of Client or 1 Manager");
-        Integer opcion = reading.nextInt();
+        Integer option = reading.nextInt();
 
-        if (opcion > 0){
+        if (option > 0){
             System.out.println("Welcome Client");
         }else {
             System.out.println("Welcome Manager");

@@ -8,6 +8,7 @@ public class MainClient {
     public static void main(String[] args) {
 
         Scanner reading = new Scanner(System.in);
+        UserClient client = new UserClient();
 
         System.out.println("Enter your name:");
         String clientName = reading.nextLine();
@@ -21,16 +22,19 @@ public class MainClient {
         System.out.println("Enter your password:");
         Integer clientPassword = reading.nextInt();
 
-        UserClient client = new UserClient();
+        boolean isClient = true;
 
-        client.setCityName(clientCity);
-        client.setPassword(clientPassword);
-        client.setFirstName(clientName);
-        client.setPhoneNumber(clientPhoneNumber);
+        while (isClient){
+            client.setCityName(clientCity);
+            client.setPassword(clientPassword);
+            client.setFirstName(clientName);
+            client.setPhoneNumber(clientPhoneNumber);
 
-        System.out.println(client.getCityName());
-        System.out.println(client.getFirstName());
-        System.out.println(client.getPassword());
-        System.out.println(client.getPhoneNumber());
+            System.out.println(client.getCityName());
+            System.out.println(client.getFirstName());
+            System.out.println("**"+client.getPassword());
+            System.out.println(client.getPhoneNumber());
+            break;
+        }
     }
 }
