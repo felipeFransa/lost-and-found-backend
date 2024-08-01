@@ -23,9 +23,13 @@ public class MainManager {
         manager.setAge(managerAge);
         manager.setPassword(8150);
 
-        System.out.println(manager.getFirstName());
-        System.out.println(manager.getRegion());
-        System.out.println(manager.getAge());
-        System.out.println(manager.getPassword());
+        while (true){
+            System.out.println(manager.getFirstName());
+            System.out.println(manager.getRegion());
+            System.out.println(manager.getAge());
+            System.out.println(manager.getPassword());
+            break;
+        }
+
     }
 }
