@@ -29,7 +29,7 @@ public class MainPost {
             System.out.println(post.getAnimalsType());
             System.out.println(post.getRegion());
 
-        } else if (typePlan.equals("premie")) {
+        } else if (typePlan.equals("premier")) {
             System.out.println("Hello User!");
         } else {
             System.out.println("Access denied");
