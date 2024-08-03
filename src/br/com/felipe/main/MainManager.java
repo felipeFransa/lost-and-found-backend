@@ -8,28 +8,35 @@ public class MainManager {
     public static void main(String[] args) {
 
         Scanner reading = new Scanner(System.in);
-        System.out.println("Enter your name:");
-        String managerName = reading.nextLine();
+        String userValid = reading.nextLine();
 
-        System.out.println("Enter your region:");
-        String managerRegion = reading.nextLine();
+        if (userValid.equals("usermanager")){
+            UserManager manager = new UserManager();
 
-        System.out.println("Enter your age:");
-        Integer managerAge = reading.nextInt();
+            System.out.println("Enter your name:");
+            String managerName = reading.nextLine();
 
-        UserManager manager = new UserManager();
-        manager.setFirstName(managerName);
-        manager.setRegion(managerRegion);
-        manager.setAge(managerAge);
-        manager.setPassword(8150);
+            System.out.println("Enter your region:");
+            String managerRegion = reading.nextLine();
 
-        while (true){
-            System.out.println(manager.getFirstName());
-            System.out.println(manager.getRegion());
-            System.out.println(manager.getAge());
-            System.out.println(manager.getPassword());
-            break;
+            System.out.println("Enter your age:");
+            String managerAge = reading.nextLine();
+
+            System.out.println("enter your password:");
+            String password = reading.nextLine();
+
+            manager.setFirstName(managerName);
+            manager.setRegion(managerRegion);
+            manager.setAge(managerAge);
+            manager.setPassword(password);
+
+            while (true){
+                System.out.println(manager.getFirstName());
+                System.out.println(manager.getRegion());
+                System.out.println(manager.getAge());
+                System.out.println(manager.getPassword());
+                break;
+            }
         }
-
     }
 }

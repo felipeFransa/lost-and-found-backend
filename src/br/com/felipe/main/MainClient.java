@@ -20,7 +20,7 @@ public class MainClient {
         String clientPhoneNumber = reading.nextLine();
 
         System.out.println("Enter your password:");
-        Integer clientPassword = reading.nextInt();
+        String clientPassword = reading.nextLine();
 
         boolean isClient = true;
 

@@ -30,7 +30,7 @@ public class MainProduct {
             product.setTypeProduct(typeProduct);
 
             String productDescription = product.getNameProduct()+ """
-                    custa
+                    value
                     """+product.getValueProduct();
 
             System.out.println(productDescription);

@@ -1,8 +1,8 @@
 package br.com.felipe.model;
 public class User {
     private String firstName;
-    private int age;
-    private int password;
+    private String age;
+    private String password;
 
     public String getFirstName() {
         return firstName;
@@ -12,19 +12,19 @@ public class User {
         this.firstName = firstName;
     }
 
-    public int getAge() {
+    public String getAge() {
         return age;
     }
 
-    public void setAge(int age) {
+    public void setAge(String age) {
         this.age = age;
     }
 
-    public int getPassword() {
+    public String getPassword() {
         return password;
     }
 
-    public void setPassword(int password) {
+    public void setPassword(String password) {
         this.password = password;
     }
 }
