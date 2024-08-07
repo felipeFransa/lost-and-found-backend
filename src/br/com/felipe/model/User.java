@@ -27,4 +27,9 @@ public class User {
     public void setPassword(String password) {
         this.password = password;
     }
+
+    public void user(){
+        System.out.println("Seja bem vindo " +getFirstName());
+        System.out.println("Sua idade é: " +getAge());
+    }
 }
