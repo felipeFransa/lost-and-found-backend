@@ -22,9 +22,10 @@ public class MainClient {
         System.out.println("Enter your password:");
         String clientPassword = reading.nextLine();
 
-        boolean isClient = true;
+        System.out.println("Enter your type plan:");
+        String isClient = reading.nextLine();
 
-        while (isClient){
+        if (isClient.equals("plus")){
             client.setCityName(clientCity);
             client.setPassword(clientPassword);
             client.setFirstName(clientName);
@@ -34,7 +35,8 @@ public class MainClient {
             System.out.println(client.getFirstName());
             System.out.println("**"+client.getPassword());
             System.out.println(client.getPhoneNumber());
-            break;
+        }else {
+            System.out.println("yout not client plus");
         }
     }
 }
