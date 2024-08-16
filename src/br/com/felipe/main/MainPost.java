@@ -16,6 +16,8 @@ public class MainPost {
         String typePlan = reading.nextLine();
 
         if (typePlan.equals("plus")){
+            System.out.println("new post finds");
+
             System.out.println("enter your animal:");
             String animal = reading.nextLine();
             System.out.println("Enter your species:");
