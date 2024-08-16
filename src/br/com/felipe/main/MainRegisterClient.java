@@ -4,10 +4,11 @@ import br.com.felipe.model.UserClient;
 
 import java.util.Scanner;
 
-public class MainClient {
+public class MainRegisterClient {
     public static void main(String[] args) {
 
         Scanner reading = new Scanner(System.in);
+        System.out.println("register new client");
         UserClient client = new UserClient();
 
         System.out.println("Enter your name:");
