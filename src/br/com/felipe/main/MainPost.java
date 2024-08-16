@@ -12,6 +12,7 @@ public class MainPost {
         NewPost post = new NewPost();
         Finds finds = new Finds();
 
+        System.out.println("register new post");
         System.out.println("enter your type plan");
         String typePlan = reading.nextLine();
 

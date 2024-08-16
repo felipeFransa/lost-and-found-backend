@@ -14,7 +14,6 @@ public class MainRegisterProduct {
         System.out.println("Enter your type user:");
         String typeClient = reading.nextLine();
 
-
         if (typeClient.equals("manager")){
 
             System.out.println("Name product:");
