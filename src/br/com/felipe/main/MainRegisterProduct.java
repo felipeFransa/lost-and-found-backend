@@ -4,12 +4,13 @@ import br.com.felipe.model.Product;
 
 import java.util.Scanner;
 
-public class MainProduct {
+public class MainRegisterProduct {
     public static void main(String[] args) {
 
         Product product = new Product();
         Scanner reading = new Scanner(System.in);
 
+        System.out.println("Register new product:");
         System.out.println("Enter your type user:");
         String typeClient = reading.nextLine();
 
