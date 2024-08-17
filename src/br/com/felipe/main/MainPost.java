@@ -26,9 +26,9 @@ public class MainPost {
             System.out.println("Enter your region");
             String region = reading.nextLine();
 
-            finds.setAnimalsName("Dog");
-            finds.setAnimalsType("canine");
-            finds.setRegion("america");
+//            finds.setAnimalsName("Dog");
+//            finds.setAnimalsType("canine");
+//            finds.setRegion("america");
 
             post.setAnimalsName(animal);
             post.setAnimalsType(species);
