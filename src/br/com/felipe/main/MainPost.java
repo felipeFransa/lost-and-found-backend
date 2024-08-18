@@ -1,6 +1,5 @@
 package br.com.felipe.main;
 
-import br.com.felipe.model.Finds;
 import br.com.felipe.model.NewPost;
 
 import java.util.Scanner;
@@ -10,7 +9,6 @@ public class MainPost {
     public static void main(String[] args) {
         Scanner reading = new Scanner(System.in);
         NewPost post = new NewPost();
-        Finds finds = new Finds();
 
         System.out.println("register new post");
         System.out.println("enter your type plan");
@@ -25,10 +23,6 @@ public class MainPost {
             String species = reading.nextLine();
             System.out.println("Enter your region");
             String region = reading.nextLine();
-
-//            finds.setAnimalsName("Dog");
-//            finds.setAnimalsType("canine");
-//            finds.setRegion("america");
 
             post.setAnimalsName(animal);
             post.setAnimalsType(species);
