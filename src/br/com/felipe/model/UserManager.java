@@ -6,6 +6,15 @@ public class UserManager extends User {
 
     private ArrayList<String> clients;
     private String region;
+    private boolean toCheck;
+
+    public boolean isToCheck() {
+        return toCheck;
+    }
+
+    public void setToCheck(boolean toCheck) {
+        this.toCheck = toCheck;
+    }
 
     public ArrayList<String> getClients() {
         return clients;

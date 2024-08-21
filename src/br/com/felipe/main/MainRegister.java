@@ -27,10 +27,10 @@ public class MainRegister {
         newUserManager.setRegion(managerRegion);
         newUserManager.setAge(managerAge);
         newUserManager.setPassword(password);
+        newUserManager.setToCheck(true);
 
-        boolean toCheck = true;
 
-        if (toCheck == true){
+        if (newUserManager.isToCheck()){
             System.out.println(newUserManager.getFirstName());
         }else {
             System.out.println("failed");
