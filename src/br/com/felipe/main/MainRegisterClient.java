@@ -37,7 +37,7 @@ public class MainRegisterClient {
             System.out.println("**"+client.getPassword());
             System.out.println(client.getPhoneNumber());
         }else {
-            System.out.println("yout not client plus");
+            System.out.println("your not client plus");
         }
     }
 }
