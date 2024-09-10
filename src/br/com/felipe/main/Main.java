@@ -15,7 +15,6 @@ public class Main {
         System.out.println("Enter your age:");
         String age = reading.nextLine();
 
-
         user.setFirstName(name);
         user.setAge(age);
 

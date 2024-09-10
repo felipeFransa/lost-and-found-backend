@@ -6,7 +6,6 @@ import java.util.Scanner;
 
 public class MainRegister {
     public static void main(String[] args) {
-
         Scanner reading = new Scanner(System.in);
         UserManager newUserManager = new UserManager();
         System.out.println("Register");
@@ -28,7 +27,6 @@ public class MainRegister {
         newUserManager.setAge(managerAge);
         newUserManager.setPassword(password);
         newUserManager.setToCheck(true);
-
 
         if (newUserManager.isToCheck()){
             System.out.println(newUserManager.getFirstName());
