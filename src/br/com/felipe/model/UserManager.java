@@ -2,7 +2,34 @@ package br.com.felipe.model;
 
 import java.util.ArrayList;
 
-public class UserManager extends User {
+public class UserManager {
+    private String firstName;
+    private String age;
+    private String password;
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getAge() {
+        return age;
+    }
+
+    public void setAge(String age) {
+        this.age = age;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
 
     private ArrayList<String> clients;
     private String region;

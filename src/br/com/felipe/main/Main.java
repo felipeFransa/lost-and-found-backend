@@ -1,13 +1,13 @@
 package br.com.felipe.main;
 
-import br.com.felipe.model.User;
+import br.com.felipe.model.UserManager;
 
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
         Scanner reading = new Scanner(System.in);
-        User user = new User();
+        UserManager user = new UserManager();
 
         System.out.println("Enter your name:");
         String name = reading.nextLine();
