@@ -34,6 +34,7 @@ public class MainRegisterProduct {
                     """+product.getValueProduct();
 
             System.out.println(productDescription);
+            System.out.println(product.getTypeProduct());
 
         }else {
             System.out.println("Access denied");
