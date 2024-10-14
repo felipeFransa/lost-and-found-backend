@@ -3,14 +3,15 @@ package br.com.felipe.main;
 import br.com.felipe.model.UserManager;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
         Scanner reading = new Scanner(System.in);
         UserManager user = new UserManager();
-
         LocalDate myObj = LocalDate.now();
+        LocalDate date = LocalDate.from(LocalDateTime.now());
 
         System.out.println("Enter your name:");
         String name = reading.nextLine();
@@ -27,6 +28,7 @@ public class Main {
         if (userName.equals("felipe") || userAge.equals("27")){
             System.out.println("Welcome Client");
             System.out.println(myObj);
+            System.out.println(date);
         }else {
             System.out.println("Welcome Manager");
         }
