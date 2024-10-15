@@ -4,6 +4,7 @@ import br.com.felipe.model.UserManager;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.LocalTime;
 import java.util.Scanner;
 
 public class Main {
@@ -11,7 +12,8 @@ public class Main {
         Scanner reading = new Scanner(System.in);
         UserManager user = new UserManager();
         LocalDate myObj = LocalDate.now();
-        LocalDate date = LocalDate.from(LocalDateTime.now());
+        LocalTime myTime = LocalTime.now();
+        LocalDateTime myDateObj = LocalDateTime.now();
 
         System.out.println("Enter your name:");
         String name = reading.nextLine();
@@ -28,7 +30,7 @@ public class Main {
         if (userName.equals("felipe") || userAge.equals("27")){
             System.out.println("Welcome Client");
             System.out.println(myObj);
-            System.out.println(date);
+            System.out.println(myTime);
         }else {
             System.out.println("Welcome Manager");
         }
