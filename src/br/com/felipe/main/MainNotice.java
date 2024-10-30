@@ -2,12 +2,14 @@ package br.com.felipe.main;
 
 import br.com.felipe.model.Notice;
 
+import java.time.LocalDate;
 import java.util.Scanner;
 
 public class MainNotice {
     public static void main(String[] args) {
         Scanner reading = new Scanner(System.in);
         Notice newNotice = new Notice();
+        LocalDate nowDate = LocalDate.now();
 
         System.out.println("enter new title notice:");
         String readingTitle = reading.nextLine();
@@ -22,5 +24,6 @@ public class MainNotice {
 
         System.out.println(title);
         System.out.println(description);
+        System.out.println(nowDate);
     }
 }

@@ -8,7 +8,7 @@ public class MainRegister {
     public static void main(String[] args) {
         Scanner reading = new Scanner(System.in);
         UserManager newUserManager = new UserManager();
-        System.out.println("Register");
+        System.out.println("Register new user manager");
 
         System.out.println("Enter your name:");
         String managerName = reading.nextLine();

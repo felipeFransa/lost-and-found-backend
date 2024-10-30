@@ -3,7 +3,6 @@ package br.com.felipe.main;
 import br.com.felipe.model.UserManager;
 
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.util.Scanner;
 
@@ -13,7 +12,6 @@ public class Main {
         UserManager user = new UserManager();
         LocalDate myObj = LocalDate.now();
         LocalTime myTime = LocalTime.now();
-        LocalDateTime myDateObj = LocalDateTime.now();
 
         System.out.println("Enter your name:");
         String name = reading.nextLine();
