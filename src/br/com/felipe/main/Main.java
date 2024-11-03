@@ -10,7 +10,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner reading = new Scanner(System.in);
         UserManager user = new UserManager();
-        LocalDate myObj = LocalDate.now();
+        LocalDate myDate = LocalDate.now();
         LocalTime myTime = LocalTime.now();
 
         System.out.println("Enter your name:");
@@ -27,7 +27,7 @@ public class Main {
 
         if (userName.equals("felipe") || userAge.equals("27")){
             System.out.println("Welcome Client");
-            System.out.println(myObj);
+            System.out.println(myDate);
             System.out.println(myTime);
         }else {
             System.out.println("Welcome Manager");

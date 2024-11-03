@@ -2,6 +2,7 @@ package br.com.felipe.main;
 
 import br.com.felipe.model.NewPost;
 
+import java.time.LocalDate;
 import java.util.Scanner;
 
 public class MainPost {
@@ -9,6 +10,7 @@ public class MainPost {
     public static void main(String[] args) {
         Scanner reading = new Scanner(System.in);
         NewPost post = new NewPost();
+        LocalDate nowDate = LocalDate.now();
 
         System.out.println("register new post");
         System.out.println("enter your type plan");
