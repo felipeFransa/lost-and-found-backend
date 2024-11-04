@@ -36,6 +36,7 @@ public class MainPost {
 
         } else if (typePlan.equals("premier")) {
             System.out.println("Hello User!");
+            System.out.println(nowDate);
         } else {
             System.out.println("Access denied");
         }
