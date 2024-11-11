@@ -37,11 +37,13 @@ public class MainRegisterClient {
             client.setPhoneNumber(clientPhoneNumber);
             client.setAge(clientAge);
 
-            System.out.println(client.getCityName());
-            System.out.println(client.getFirstName());
-            System.out.println("**"+client.getPassword());
-            System.out.println(client.getPhoneNumber());
-            System.out.println(client.getAge());
+            if (client.getFirstName().equals("felipe")){
+                System.out.println(client.getCityName());
+                System.out.println(client.getFirstName());
+                System.out.println("**"+client.getPassword());
+                System.out.println(client.getPhoneNumber());
+                System.out.println(client.getAge());
+            }
         }else {
             System.out.println("your not client plus");
         }
