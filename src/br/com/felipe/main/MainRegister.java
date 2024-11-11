@@ -30,6 +30,8 @@ public class MainRegister {
 
         if (newUserManager.isToCheck()){
             System.out.println(newUserManager.getFirstName());
+            System.out.println(newUserManager.getAge());
+            System.out.println(newUserManager.getRegion());
         }else {
             System.out.println("failed");
         }
