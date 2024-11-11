@@ -1,5 +1,6 @@
 package br.com.felipe.main;
 
+import br.com.felipe.model.UserClient;
 import br.com.felipe.model.UserManager;
 
 import java.time.LocalDate;
@@ -9,7 +10,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner reading = new Scanner(System.in);
-        UserManager user = new UserManager();
+        UserClient user = new UserClient();
         LocalDate myDate = LocalDate.now();
         LocalTime myTime = LocalTime.now();
 
@@ -17,7 +18,7 @@ public class Main {
         String name = reading.nextLine();
 
         System.out.println("Enter your age:");
-        String age = reading.nextLine();
+        Integer age = reading.nextInt();
 
         user.setFirstName(name);
         user.setAge(age);
@@ -25,7 +26,7 @@ public class Main {
         var userName = user.getFirstName();
         var userAge = user.getAge();
 
-        if (userName.equals("felipe") || userAge.equals("27")){
+        if (userName.equals("felipe") || userAge.equals(27)){
             System.out.println("Welcome Client");
             System.out.println(myDate);
             System.out.println(myTime);
