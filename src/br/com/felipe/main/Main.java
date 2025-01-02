@@ -1,7 +1,6 @@
 package br.com.felipe.main;
 
 import br.com.felipe.model.UserClient;
-import br.com.felipe.model.UserManager;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
@@ -31,7 +30,7 @@ public class Main {
             System.out.println(myDate);
             System.out.println(myTime);
         }else {
-            System.out.println("Welcome Manager");
+            System.out.println("Access denied");
         }
     }
 }
