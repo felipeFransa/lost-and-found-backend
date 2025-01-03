@@ -6,6 +6,9 @@ public class UserManager {
     private String firstName;
     private String age;
     private String password;
+    private ArrayList<String> clients;
+    private String region;
+    private boolean toCheck;
 
     public String getFirstName() {
         return firstName;
@@ -30,10 +33,6 @@ public class UserManager {
     public void setPassword(String password) {
         this.password = password;
     }
-
-    private ArrayList<String> clients;
-    private String region;
-    private boolean toCheck;
 
     public boolean isToCheck() {
         return toCheck;

@@ -4,6 +4,8 @@ public class UserClient {
     private String firstName;
     private Integer age;
     private String password;
+    private String cityName;
+    private String phoneNumber;
 
     public String getFirstName() {
         return firstName;
@@ -28,9 +30,6 @@ public class UserClient {
     public void setPassword(String password) {
         this.password = password;
     }
-
-    private String cityName;
-    private String phoneNumber;
 
     public String getCityName() {
         return cityName;
