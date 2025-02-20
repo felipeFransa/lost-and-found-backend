@@ -7,23 +7,33 @@ import java.util.Scanner;
 
 public class MainNotice {
     public static void main(String[] args) {
-        Scanner reading = new Scanner(System.in);
-        Notice newNotice = new Notice();
-        LocalDate nowDate = LocalDate.now();
+        try (Scanner reading = new Scanner(System.in)) {
+            Notice newNotice = new Notice();
+            LocalDate nowDate = LocalDate.now();
 
-        System.out.println("enter new title notice:");
-        String readingTitle = reading.nextLine();
-        newNotice.setNoticeTitle(readingTitle);
+            String readingTitle = readInput(reading, "Enter new title notice:");
+            newNotice.setNoticeTitle(readingTitle);
 
-        System.out.println("enter new description notice:");
-        String readingDescription = reading.nextLine();
-        newNotice.setNoticeDescription(readingDescription);
+            String readingDescription = readInput(reading, "Enter new description notice:");
+            newNotice.setNoticeDescription(readingDescription);
 
-        String title = newNotice.getNoticeTitle();
-        String description = newNotice.getNoticeDescription();
+            displayNotice(newNotice, nowDate);
+        }
+    }
 
-        System.out.println(title);
-        System.out.println(description);
-        System.out.println(nowDate);
+    private static String readInput(Scanner scanner, String prompt) {
+        System.out.println(prompt);
+        String input = scanner.nextLine().trim();
+        while (input.isEmpty()) {
+            System.out.println("Input cannot be empty. Please try again.");
+            input = scanner.nextLine().trim();
+        }
+        return input;
+    }
+
+    private static void displayNotice(Notice notice, LocalDate date) {
+        System.out.println("Title: " + notice.getNoticeTitle());
+        System.out.println("Description: " + notice.getNoticeDescription());
+        System.out.println("Date: " + date);
     }
 }
