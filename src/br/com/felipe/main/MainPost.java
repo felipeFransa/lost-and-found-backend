@@ -8,40 +8,55 @@ import java.util.Scanner;
 
 public class MainPost {
 
+    private static final String PLAN_PLUS = "plus";
+    private static final String PLAN_PREMIER = "premier";
+
     public static void main(String[] args) {
         Scanner reading = new Scanner(System.in);
         NewPost post = new NewPost();
+
+        System.out.println("Register new post");
+        System.out.println("Enter your type plan (plus/premier):");
+        String typePlan = reading.nextLine().toLowerCase();
+
+        switch (typePlan) {
+            case PLAN_PLUS:
+                handlePlusPlan(reading, post);
+                break;
+            case PLAN_PREMIER:
+                handlePremierPlan();
+                break;
+            default:
+                System.out.println("Access denied");
+                break;
+        }
+    }
+
+    private static void handlePlusPlan(Scanner reading, NewPost post) {
+        System.out.println("New post finds");
+
+        System.out.println("Enter your animal:");
+        String animal = reading.nextLine();
+        System.out.println("Enter your species:");
+        String species = reading.nextLine();
+        System.out.println("Enter your region:");
+        String region = reading.nextLine();
+
+        post.setAnimalsName(animal);
+        post.setAnimalsType(species);
+        post.setRegion(region);
+
+        System.out.println("Animal Name: " + post.getAnimalsName());
+        System.out.println("Animal Type: " + post.getAnimalsType());
+        System.out.println("Region: " + post.getRegion());
+    }
+
+    private static void handlePremierPlan() {
         LocalDate nowDate = LocalDate.now();
         LocalTime nowTime = LocalTime.now();
 
-        System.out.println("register new post");
-        System.out.println("enter your type plan");
-        String typePlan = reading.nextLine();
-
-        if (typePlan.equals("plus")){
-            System.out.println("new post finds");
-
-            System.out.println("enter your animal:");
-            String animal = reading.nextLine();
-            System.out.println("Enter your species:");
-            String species = reading.nextLine();
-            System.out.println("Enter your region");
-            String region = reading.nextLine();
-
-            post.setAnimalsName(animal);
-            post.setAnimalsType(species);
-            post.setRegion(region);
-
-            System.out.println(post.getAnimalsName());
-            System.out.println(post.getAnimalsType());
-            System.out.println(post.getRegion());
-
-        } else if (typePlan.equals("premier")) {
-            System.out.println("Hello User!");
-            System.out.println(nowDate);
-            System.out.println(nowTime);
-        } else {
-            System.out.println("Access denied");
-        }
+        System.out.println("Hello User!");
+        System.out.println("Current Date: " + nowDate);
+        System.out.println("Current Time: " + nowTime);
     }
 }
