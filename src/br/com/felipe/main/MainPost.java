@@ -1,6 +1,6 @@
 package br.com.felipe.main;
 
-import br.com.felipe.model.NewPost;
+import br.com.felipe.model.Post;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
@@ -13,7 +13,7 @@ public class MainPost {
 
     public static void main(String[] args) {
         Scanner reading = new Scanner(System.in);
-        NewPost post = new NewPost();
+        Post post = new Post();
 
         System.out.println("Register new post");
         System.out.println("Enter your type plan (plus/premier):");
@@ -32,7 +32,7 @@ public class MainPost {
         }
     }
 
-    private static void handlePlusPlan(Scanner reading, NewPost post) {
+    private static void handlePlusPlan(Scanner reading, Post post) {
         System.out.println("New post finds");
 
         System.out.println("Enter your animal:");

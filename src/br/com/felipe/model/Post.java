@@ -1,6 +1,6 @@
 package br.com.felipe.model;
 
-public class NewPost {
+public class Post {
     private String animalsType;
     private String animalsName;
     private String region;
